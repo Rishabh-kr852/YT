@@ -24,7 +24,7 @@ app.post("/",function(req,res){
   }
   else{
     var final = link.slice(15);
-    var visit = "https://www.youmagic"+final; //https://youtu.be/aUW5GAFhu6s
+    var visit = "https://www.youmagic"+final;
   }
 
   res.redirect(visit);
