@@ -3,12 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+  --primary-color: #fff;
+  --secondary-color: black;
+  --tertiary-color: gray;
+}
+.dark-theme{
+  --primary-color: black;
+  --secondary-color: #fff;
+  --tertiary-color: white;
+}
 body{
   background-image: url("anime.jpg");
   background-size: cover;
 }
+#icon{
+  width: 30px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
 .box{
-  background-color: white;
+  background-color: var(--primary-color);
   border-radius: 20px;
   opacity: 0.88;
   padding-left: 10px;
@@ -20,7 +35,7 @@ body{
     margin-top: 10%;
 }
 #link:hover{
-  box-shadow: 5px 5px grey;
+  box-shadow: 5px 5px var(--tertiary-color);
 }
 .enter{
   padding-left: 20px;
@@ -34,7 +49,7 @@ body{
   border-radius: 4px;
   background-color: #f4511e;
   border: none;
-  color: #FFFFFF;
+  color: var(--primary-color);
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -44,11 +59,12 @@ body{
   margin: 5px;
 }
 .button:hover {
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px var(--secondary-color);
 }
 .tips{
   text-align: left;
   padding: 100px;
+  color: var(--secondary-color);
 }
 .tips h3{
   font-size: 25px;
